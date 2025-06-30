@@ -79,7 +79,6 @@ Escolha uma opção:
     ''')
 
 # --- Loop Principal do Programa ---
-
 printar_menu()
 
 while True:
@@ -95,7 +94,7 @@ while True:
     elif choice == '2':
         print("\n--- Formato do DataFrame (Parquet em memória) ---")
         if df_parquet is not None:
-            print(df_parquet.shape) # Correção: .shape é atributo, não método
+            print(df_parquet.shape)
         else:
             print("DataFrame Parquet não carregado.")
 
